@@ -2,14 +2,20 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
+body {
+	margin: 0;
+}
 .top-navigation {
 	background-color: #fff;
 	diplay: inline;
-	/*border: 1px solid red;*/
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; 
 	font-size: 16px; 
 	color: #838994; 
 	letter-spacing: 0.03em;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
 }
 
 .top-navigation > .content {
@@ -23,7 +29,7 @@ html {
 	height: 40px;
 	margin-left: 14px;
 	padding-left: 0px 15px;
-	margin-top: 10px;
+	margin-top: 14px;
 }
 
 .links {
@@ -36,7 +42,7 @@ html {
 	display: inline;
 	font-size: 16px;
 	margin-left: 24px;
-	font-family: "Roboto";
+	font-family: 'Roboto', sans-serif;
 }
 
 .top-navigation .links .active {
@@ -58,13 +64,10 @@ html {
 
 .introduction h1 {
 	font-size: 50px;
-	font-weight: 300px;
+	font-weight: 300;
 	margin-top: 0;
+	margin-bottom: 20px;
 	padding-top: 190px;
-	padding-left: 0;
-	padding-right: 0;
-	margin-left: 0;
-	margin-right: 0;
 }
 
 .introduction h3 {
@@ -73,7 +76,8 @@ html {
 	padding-right: 0;
 	margin-left: 0;
 	margin-right: 0;
-	/*font-weight: 300px;*/
+	font-weight: 300;
+	margin-top: 0;
 }
 
 .buttons button {
@@ -85,29 +89,96 @@ html {
 	padding: 15px 29px;
 	font-size: 20px;
 	color: #fff;
+	margin-bottom: 40px;
+}
+
+.cases .devices {
+	margin: 0px auto;
+	/*width: 921px;*/
+	width: 738px;
+	padding: 0;
 }
 
 .cases {
-	border: 1px solid red;
+	margin-bottom: 40px;
 }
 
-.cases > .content {
-	width: 921px;
-	height: 200px;
-	margin: 0 auto;
-	border: 1px solid green;
-}
-
-.cases > .content {
-	width: 921px;
-	height: 300px;
-	margin: 0 auto;
-	border: 1px solid green;
+.cases h2 {
+	font-weight: 300;
 }
 
 .devices li {
 	list-style-type: none;
-	display: inline-block;
-	font-family: 'Roboto', sans-serif; 
+	width: 33.333333333%;
+	float: left;
+	display: inline-block;	
+	margin: 20px 0;
+	padding: 0;
+	text-align: center;
+}
 
+.content h2 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 45px;
+	margin-top: 120px;
+}
+
+.devices h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400; 
+	font-size: 26px;
+}
+
+.devices:after {
+	content: "";
+	display:table;
+	clear: both;
+}
+
+.social .content {
+	border-top: 1px solid #eaebec;
+	width: 921px;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.social .icons {
+	padding: 0;
+}
+.social li {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0 20px;
+		border: 1px solid #eaebec;
+		height: 40px;
+		width: 40px;
+		border-radius: 45px;
+		line-height: 42px;
+}
+
+.social h5 {
+	font-weight: 400; 
+	font-size: 16px;
+}
+
+.social .twitter {
+	color: #55acee;
+}
+
+.social .facebook {
+	color: #4c66a4;
+}
+
+.social .instagram {
+	color: #3f729b;
+}
+
+.copy {
+	font-weight: 300;
+	font-size: 14px;
+	color: #333333;
 }
